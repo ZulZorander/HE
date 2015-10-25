@@ -5,5 +5,14 @@ package com.local;
  */
 public interface Card {
 
-    void getPoints();
+    String getRank();
+
+    String getSuit();
+
+    /**
+     * Get amount of points that this card represents
+     *
+     * @return amount of points that this card represents
+     */
+    int getPoints();
 }
