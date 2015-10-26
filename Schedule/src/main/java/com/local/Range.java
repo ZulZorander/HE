@@ -34,11 +34,6 @@ final public class Range implements Comparable<Range> {
 		return this;
 	}
 
-    /**
-     * Deep copy of Range
-     *
-     * @return new Range
-     */
     public Range copy() {
         return new Range(start, end);
     }
