@@ -5,9 +5,9 @@ package com.local;
  */
 public interface Card {
 
-    String getRank();
+    Rank getRank();
 
-    String getSuit();
+    Suit getSuit();
 
     /**
      * Get amount of points that this card represents

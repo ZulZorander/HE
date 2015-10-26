@@ -1,5 +1,7 @@
 package com.local;
 
+import com.local.blackjack.exception.EmptyDeckException;
+
 /**
  * @author dmytro.malovichko
  */
@@ -15,6 +17,6 @@ public interface Deck {
      *
      * @return next card in the deck
      */
-    Card drawCard();
+    Card drawCard() throws EmptyDeckException;
 
 }

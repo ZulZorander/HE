@@ -6,19 +6,11 @@ package com.local;
  *
  * @author dmytro.malovichko
  */
-public interface Dealer {
+public interface Dealer extends Player {
 
     /**
-     * The dealer must draw cards until it(AI) decides that it is enough
-     *
-     * @param deck currently used deck
+     * Reset dealer state
      */
-    void play(Deck deck);
+    void gameOver();
 
-    /**
-     * Algorithm which decides whether it makes sense to draw another card taking into account cards in the Dealer's hand
-     *
-     * @return true, if it makes sense to draw another card based on AI algorithm, false otherwise
-     */
-    boolean isEnoughCards();
 }
